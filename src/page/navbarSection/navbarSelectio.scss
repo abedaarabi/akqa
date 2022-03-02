@@ -1,0 +1,34 @@
+@import "../../global.scss";
+@include mobile {
+  //   .hamburger {
+  //     width: 32px;
+  //     height: 25px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: space-between;
+  //     cursor: pointer;
+  //     overflow: hidden;
+
+  //     span {
+  //       width: 100%;
+  //       height: 3px;
+  //       background-color: rgb(175, 53, 53);
+  //       transform-origin: left;
+  //       transition: all 0.2s ease;
+  //     }
+
+  //     span {
+  //       &:first-child {
+  //         background-color: white;
+  //         transform: rotate(45deg);
+  //       }
+  //       &:nth-child(2) {
+  //         opacity: 0;
+  //       }
+  //       &:last-child {
+  //         background-color: white;
+  //         transform: rotate(-45deg);
+  //       }
+  //     }
+  //   }
+}

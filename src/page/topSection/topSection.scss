@@ -1,0 +1,85 @@
+@import "../../global.scss";
+.topSction-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $grayColor;
+
+  .top {
+    display: flex;
+    width: 100%;
+
+    img {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      object-fit: cover;
+
+      @include mobile {
+        height: 40vh;
+      }
+    }
+    .topSction-text {
+      color: #fff;
+      font-family: Roboto, "Helvetica Neue";
+      width: 33%;
+      margin: 150px 50px;
+
+      h1:nth-child(1) {
+        font-weight: 200;
+        text-transform: capitalize;
+        @include mobile {
+          color: #fff;
+        }
+      }
+      h1:nth-child(2) {
+        font-weight: 200;
+        text-transform: capitalize;
+        @include mobile {
+          color: #fff;
+        }
+      }
+      h1:nth-child(3) {
+        margin-top: 20px;
+        @include mobile {
+          margin-top: 60px;
+        }
+      }
+      @include mobile {
+        position: fixed;
+        font-size: 15px;
+        color: rgb(12, 32, 63);
+        width: 80%;
+        padding-right: 100px;
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-self: space-around;
+    @include mobile {
+      flex-direction: column;
+    }
+    .img-container {
+      flex: 0.5;
+      padding-left: 200px;
+      img {
+        width: 600px;
+      }
+    }
+    .text-container {
+      flex: 0.5;
+      h1 {
+        width: 80%;
+        color: $blueColor;
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+      p {
+        font-size: 18px;
+        width: 70%;
+      }
+    }
+  }
+}
