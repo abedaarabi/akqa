@@ -30,8 +30,8 @@ export const TopSection = () => {
         <div className="text-container">
           <h1>
             It is the first and only biologic developed <br />
-            to specifically neutralize IL-13, a key driver of atopic dermatitis
-            signs and <br />
+            to specifically neutralize IL-13, a key driver <br />
+            of atopic dermatitis signs and <br />
             symptoms(1,2)
           </h1>
           <p>

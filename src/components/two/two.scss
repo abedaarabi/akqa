@@ -1,0 +1,23 @@
+@import "../../global.scss";
+.two-container {
+  width: 22%;
+  @include mobile {
+    width: 100%;
+    padding-top: 60px;
+  }
+  .two-item {
+    text-align: center;
+
+    h1 {
+      color: $blueColor;
+      font-size: 25px;
+      font-weight: 500;
+    }
+    p {
+      padding: 20px 0;
+    }
+    h3 {
+      color: $pinkColor;
+    }
+  }
+}

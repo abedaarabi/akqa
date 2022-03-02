@@ -1,0 +1,14 @@
+@import "../../global.scss";
+.sectionTwo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 70px;
+  height: 500px;
+  @include mobile {
+    flex-direction: column;
+
+    height: auto;
+  }
+}

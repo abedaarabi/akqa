@@ -35,7 +35,7 @@ const navbarTherr = [
 export const NavbarSection = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
-    <div>
+    <section>
       <Navbar
         data={navbarOne}
         menuOpen={menuOpen}
@@ -57,6 +57,6 @@ export const NavbarSection = () => {
         color="#00609C"
         fontColor="#e6e7e8"
       />
-    </div>
+    </section>
   );
 };
