@@ -9,7 +9,7 @@
     width: 100%;
 
     img {
-      width: 100%;
+      width: 100vw;
       display: flex;
       align-items: flex-end;
       object-fit: cover;
@@ -19,6 +19,8 @@
       }
     }
     .topSction-text {
+      //   position: absolute;
+      transform: translate(-160%, 10%);
       color: #fff;
       font-family: Roboto, "Helvetica Neue";
       width: 33%;
@@ -55,30 +57,44 @@
   }
   .bottom {
     display: flex;
-    width: 100%;
+
     align-items: center;
     justify-self: space-around;
     @include mobile {
       flex-direction: column;
+      align-items: center;
     }
     .img-container {
-      flex: 0.5;
-      padding-left: 200px;
+      padding-left: 150px;
+      @include mobile {
+        padding-left: 0;
+      }
       img {
-        width: 600px;
+        width: 500px;
+        @include mobile {
+          width: 400px;
+        }
       }
     }
     .text-container {
-      flex: 0.5;
       h1 {
         width: 80%;
         color: $blueColor;
         margin-bottom: 20px;
         font-size: 28px;
+        font-weight: 450;
+        @include mobile {
+          font-size: 20px;
+          padding-left: 60px;
+        }
       }
       p {
         font-size: 18px;
         width: 70%;
+        @include mobile {
+          font-size: 20px;
+          padding-left: 60px;
+        }
       }
     }
   }

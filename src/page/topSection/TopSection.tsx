@@ -8,7 +8,7 @@ import adtralza from "../../img/adtralza.png";
 export const TopSection = () => {
   return (
     <section className="topSction-container">
-      <div className="top">
+      {/* <div className="top">
         <img
           src={IVACover}
           alt="Figure 1. Percentages of images with alt text"
@@ -22,7 +22,7 @@ export const TopSection = () => {
             systemic therapy.
           </h1>
         </div>
-      </div>
+      </div> */}
       <div className="bottom">
         <div className="img-container">
           <img width="800" src={adtralza} alt="" />
