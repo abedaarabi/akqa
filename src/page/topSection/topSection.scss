@@ -4,7 +4,7 @@
   flex-direction: column;
   background-color: $grayColor;
   @include mobile {
-    height: 70vh;
+    height: auto;
   }
   .top {
     display: flex;
@@ -21,7 +21,6 @@
       }
     }
     .topSction-text {
-      //   position: absolute;
       transform: translate(-160%, 10%);
       color: #fff;
       font-family: Roboto, "Helvetica Neue";
