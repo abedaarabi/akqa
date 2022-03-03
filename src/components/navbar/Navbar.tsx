@@ -1,13 +1,14 @@
 import React from "react";
+import { NavbarType } from "../../interface/props";
 import "./navbar.scss";
-interface Navbar {
-  data: string[];
-  color: string;
-  fontColor: string;
-  menuOpen: boolean;
-  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-const Navbar = ({ data, menuOpen, setMenuOpen, color, fontColor }: Navbar) => {
+
+const Navbar = ({
+  data,
+  menuOpen,
+  setMenuOpen,
+  color,
+  fontColor,
+}: NavbarType) => {
   return (
     <nav
       className={`navbar  ${menuOpen && `active`}`}

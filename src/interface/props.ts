@@ -5,3 +5,11 @@ export interface PropsType {
   h2?: string;
   id: string;
 }
+
+export interface NavbarType {
+  data: string[];
+  color: string;
+  fontColor: string;
+  menuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
