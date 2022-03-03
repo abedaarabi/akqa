@@ -1,0 +1,45 @@
+@import "../../global.scss";
+.four-container {
+  width: 33%;
+  padding-right: 40px;
+  @include mobile {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  img {
+    width: 100%;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  h1 {
+    color: $blueColor;
+    margin-top: 20px;
+    @include mobile {
+      // font-size: 16px;
+    }
+  }
+  p {
+    color: $mainColor;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  h2 {
+    color: $pinkColor;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .item {
+    background-color: $grayColor;
+    height: 570px;
+  }
+  .four-text {
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

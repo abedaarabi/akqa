@@ -1,0 +1,81 @@
+@import "../../global.scss";
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .footer-top {
+    height: 120px;
+    background-color: #cdcdce;
+    display: flex;
+
+    padding-left: 200px;
+    align-items: center;
+    @include mobile {
+      padding-left: 20px;
+    }
+    h1 {
+      padding-left: 10px;
+      color: $blueColor;
+    }
+  }
+  .footer-bottom {
+    color: $grayColor;
+    padding: 60px;
+    height: 300px;
+    background-color: $blueColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include mobile {
+      justify-content: none;
+      height: auto;
+      flex-direction: column;
+      justify-content: none;
+    }
+
+    .footer-text-container {
+      .footer-text-h1 {
+        text-align: end;
+        width: 210px;
+        margin-top: 50px;
+        @include mobile {
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .footer-text-p {
+        p {
+          position: relative;
+          bottom: -50px;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      padding-top: 300px;
+      color: #d3d0d0;
+      @include mobile {
+        padding-top: 30px;
+        flex-direction: column;
+        text-align: center;
+      }
+      li {
+        padding-left: 20px;
+        list-style: none;
+        font-weight: 200;
+      }
+      li:hover {
+        font-weight: 200;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+}

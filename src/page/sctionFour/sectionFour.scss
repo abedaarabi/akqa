@@ -1,0 +1,27 @@
+@import "../../global.scss";
+.sectionFour-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  .sectionFour-item-containeri {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .sectionFour-text {
+    padding-left: 15%;
+    color: $blueColor;
+
+    @include mobile {
+      padding-left: 5%;
+    }
+  }
+}

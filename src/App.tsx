@@ -2,7 +2,11 @@ import React from "react";
 
 import "./app.scss";
 import Top from "./components/tob/Top";
+import Footer from "./page/footer/Footer";
 import { NavbarSection } from "./page/navbarSection/NavbarSection";
+import SectionFour from "./page/sctionFour/SectionFour";
+import SectionFive from "./page/sectionFive/SectionFive";
+import SectionThree from "./page/sectionThree/SectionThree";
 import SectionTwo from "./page/sectionTwo/SectionTwo";
 import { TopSection } from "./page/topSection/TopSection";
 
@@ -13,6 +17,10 @@ function App() {
       <NavbarSection />
       <TopSection />
       <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <Footer />
     </div>
   );
 }
