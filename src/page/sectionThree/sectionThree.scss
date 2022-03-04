@@ -1,5 +1,5 @@
 @import "../../global.scss";
-.sctionThree-container {
+.section-three-container {
   background-color: $grayColor;
   display: flex;
   align-items: center;
@@ -11,14 +11,14 @@
 
     padding: 0;
   }
-  .sctionThree-right {
+  .section-three-right {
     img {
       @include mobile {
         width: 100%;
       }
     }
   }
-  .sctionThree-left {
+  .section-three-left {
     width: 30%;
     @include mobile {
       width: 80%;
@@ -40,6 +40,7 @@
       font-size: 16px;
       padding-top: 20px;
       width: 340px;
+      padding-bottom: 30px;
     }
     ul {
       padding-top: 20px;

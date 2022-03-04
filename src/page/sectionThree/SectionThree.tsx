@@ -4,8 +4,8 @@ import "./sectionThree.scss";
 import image from "./img/image11.jpg";
 const SectionThree = () => {
   return (
-    <section className="sctionThree-container">
-      <div className="sctionThree-left">
+    <section className="section-three-container">
+      <div className="section-three-left">
         <h1>
           Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs
           and symptoms.
@@ -26,7 +26,7 @@ const SectionThree = () => {
         <button>Watch the video</button>
         <p>Duration: 2:43</p>
       </div>
-      <div className="sctionThree-right">
+      <div className="section-three-right">
         <img src={image} alt="" />
       </div>
     </section>
