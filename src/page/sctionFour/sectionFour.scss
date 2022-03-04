@@ -1,10 +1,10 @@
 @import "../../global.scss";
-.sectionFour-container {
+.section-four-container {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
 
-  .sectionFour-item-container {
+  .section-four-item-container {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
     }
   }
 
-  .sectionFour-text {
+  .section-four-text {
     padding-left: 15%;
     color: $blueColor;
 

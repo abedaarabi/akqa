@@ -28,10 +28,10 @@ const componentsData = [
 
 const SectionFour = () => {
   return (
-    <section className="sectionFour-container">
-      <h1 className="sectionFour-text">Clinical tools - at a glance</h1>
+    <section className="section-four-container">
+      <h1 className="section-four-text">Clinical tools - at a glance</h1>
 
-      <div className="sectionFour-item-container">
+      <div className="section-four-item-container">
         {componentsData.map((item) => (
           <Four
             image={item.image}

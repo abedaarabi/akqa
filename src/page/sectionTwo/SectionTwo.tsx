@@ -36,7 +36,7 @@ const componentsData = [
 ];
 const SectionTwo = () => {
   return (
-    <section className="sectionTwo-container">
+    <section className="section-two-container">
       {componentsData.map((component) => (
         <Two
           id={component.id}
