@@ -33,7 +33,17 @@ const navbarTherr = [
 ] as string[];
 
 export const NavbarSection = () => {
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  const [menuOpen, setMenuOpen] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const changeWidth = () => {
+      setMenuOpen(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+    return () => window.removeEventListener("resize", changeWidth);
+  }, []);
+
   return (
     <section className="navbar-section-container">
       <Navbar
