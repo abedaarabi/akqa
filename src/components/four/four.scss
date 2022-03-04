@@ -1,9 +1,11 @@
 @import "../../global.scss";
 .four-container {
   width: 33%;
-  padding-right: 40px;
+  padding-right: 30px;
+  margin-top: 50px;
   @include mobile {
     width: 100%;
+
     padding: 20px 0;
   }
 
@@ -15,25 +17,22 @@
   }
   h1 {
     color: $blueColor;
-    margin-top: 20px;
-    @include mobile {
-      // font-size: 16px;
-    }
+    margin-top: 10px;
   }
   p {
     color: $mainColor;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
   }
   h2 {
     color: $pinkColor;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
   }
 
   .item {
     background-color: $grayColor;
-    height: 600px;
+    height: 70vh;
   }
   .four-text {
     padding: 30px;

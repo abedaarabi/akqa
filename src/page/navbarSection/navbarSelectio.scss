@@ -1,3 +1,11 @@
 @import "../../global.scss";
 .navbar-section-container {
+  @include mobile {
+    // position: absolute;
+
+    // top: 0;
+    // bottom: 0;
+    // height: 100vw;
+    // width: 100vw;
+  }
 }

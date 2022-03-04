@@ -20,27 +20,31 @@
     }
     @include mobile {
       width: auto;
-      background: linear-gradient(to right, #010c18, #05293f, #005b87);
-      // background: url("./img/IVACover-mobil.png");
+      // background: linear-gradient(to right, #010c18, #05293f, #005b87);
+      background: url("./img/IVACover.png");
+      background-size: cover;
+      background-position: center left;
       flex-direction: column;
       height: 250px;
-
-      img {
-        display: none;
-      }
     }
 
     .top-Section-text {
-      color: #fff;
+      color: $grayColor;
       font-family: Roboto, "Helvetica Neue";
-      width: 500px;
+      width: 33%;
       margin-left: 200px;
-
+      h1 {
+        font-size: 24px;
+        font-weight: 400;
+      }
       @include mobile {
-        width: 80%;
+        h1 {
+          font-size: 15px;
+        }
+        min-width: 60%;
 
         margin: auto;
-        font-size: 10px;
+        margin-left: 40px;
       }
     }
   }
