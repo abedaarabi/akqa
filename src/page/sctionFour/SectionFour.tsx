@@ -31,7 +31,7 @@ const SectionFour = () => {
     <section className="sectionFour-container">
       <h1 className="sectionFour-text">Clinical tools - at a glance</h1>
 
-      <div className="sectionFour-item-containeri">
+      <div className="sectionFour-item-container">
         {componentsData.map((item) => (
           <Four
             image={item.image}

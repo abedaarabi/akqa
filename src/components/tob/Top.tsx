@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faSearch, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./top.scss";
 const Top = () => {
   return (
@@ -16,7 +16,7 @@ const Top = () => {
       </div>
       <div className="input-container">
         {/* TODO: check the accessibility */}
-        <div className="sarch-icon">
+        <div className="search-icon">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             size="1x"

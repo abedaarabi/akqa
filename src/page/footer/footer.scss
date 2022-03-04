@@ -42,7 +42,9 @@
         width: 210px;
         margin-top: 50px;
         @include mobile {
+          padding-top: 20px;
           text-align: center;
+          margin: auto;
         }
 
         h1 {
@@ -53,7 +55,7 @@
       .footer-text-p {
         p {
           position: relative;
-          bottom: -50px;
+          top: 60px;
           text-decoration: underline;
         }
       }

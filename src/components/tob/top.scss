@@ -42,11 +42,11 @@
       font-size: 20px;
       @include mobile {
         width: 250px;
-        height: 30px;
+        height: 40px;
         margin-top: 10px;
       }
     }
-    .sarch-icon {
+    .search-icon {
       position: absolute;
       margin-left: 320px;
       @include mobile {

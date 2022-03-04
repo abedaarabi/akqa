@@ -1,66 +1,55 @@
 @import "../../global.scss";
-.topSction-container {
+.top-Section-container {
   display: flex;
   flex-direction: column;
-  background-color: $grayColor;
-  @include mobile {
-    height: auto;
-  }
+
   .top {
     display: flex;
+    align-items: center;
     width: 100%;
+    height: 400px;
+    background: url("./img/IVACover.png"),
+      linear-gradient(to right, #010c18, #05293f, #005b87);
 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     img {
-      width: 100vw;
-      display: flex;
-      align-items: flex-end;
-      object-fit: cover;
+      width: 150px;
+    }
+    @include mobile {
+      width: auto;
+      background: linear-gradient(to right, #010c18, #05293f, #005b87);
+      flex-direction: column;
+      height: 200px;
 
-      @include mobile {
-        height: 40vh;
+      top: 0;
+      img {
+        display: none;
       }
     }
-    .topSction-text {
-      transform: translate(-160%, 10%);
+
+    .top-Section-text {
       color: #fff;
       font-family: Roboto, "Helvetica Neue";
-      width: 33%;
-      margin: 150px 50px;
+      width: 500px;
+      margin-left: 200px;
 
-      h1:nth-child(1) {
-        font-weight: 200;
-        text-transform: capitalize;
-        @include mobile {
-          color: #fff;
-        }
-      }
-      h1:nth-child(2) {
-        font-weight: 200;
-        text-transform: capitalize;
-        @include mobile {
-          color: #fff;
-        }
-      }
-      h1:nth-child(3) {
-        margin-top: 20px;
-        @include mobile {
-          margin-top: 60px;
-        }
-      }
       @include mobile {
-        position: fixed;
-        font-size: 15px;
-        color: rgb(12, 32, 63);
         width: 80%;
-        padding-right: 100px;
+
+        padding: 50px;
+        margin: auto;
+        font-size: 10px;
       }
     }
   }
   .bottom {
     display: flex;
-
     align-items: center;
-    justify-self: space-around;
+
+    background-color: $grayColor;
     @include mobile {
       flex-direction: column;
       align-items: center;

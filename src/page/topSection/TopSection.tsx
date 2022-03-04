@@ -1,20 +1,17 @@
 import React from "react";
 import "./topSection.scss";
 //@ts-ignore
-import IVACover from "../../img/IVACover.png";
+import logo from "./img/logo.png";
 //@ts-ignore
 import adtralza from "../../img/adtralza.png";
 
 export const TopSection = () => {
   return (
-    <section className="topSction-container">
-      {/* <div className="top">
-        <img
-          src={IVACover}
-          alt="Figure 1. Percentages of images with alt text"
-        />
-        <div className="topSction-text">
-          <h1 className="Adtralza"> Adtralza®</h1>
+    <section className="top-Section-container">
+      <div className="top">
+        <div className="top-Section-text">
+          <img src={logo} alt="branding logo" />
+          <h1> Adtralza®</h1>
           <h1>(tralokiumab)</h1>
           <h1>
             Adtralza® is a new treatment for adult patients with
@@ -22,10 +19,10 @@ export const TopSection = () => {
             systemic therapy.
           </h1>
         </div>
-      </div> */}
+      </div>
       <div className="bottom">
         <div className="img-container">
-          <img width="800" src={adtralza} alt="" />
+          <img width="800" src={adtralza} alt="brand logo" />
         </div>
         <div className="text-container">
           <h1>
