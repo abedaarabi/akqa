@@ -2,10 +2,10 @@ import React from "react";
 import { PropsType } from "../../interface/props";
 import "./two.scss";
 
-export const Two = ({ image, h1, p, h2, id }: PropsType) => {
+export const Two = ({ image, h1, p, h2 }: PropsType) => {
   return (
     <div className="two-container">
-      <div key={id} className="two-item">
+      <div className="two-item">
         <img src={image} alt="" />
 
         <h1>{h1}</h1>

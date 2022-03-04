@@ -16,7 +16,9 @@ const Navbar = ({
     >
       <ul>
         {data.map((item) => (
-          <li onClick={() => setMenuOpen(false)}>{item}</li>
+          <li key={item} onClick={() => setMenuOpen(false)}>
+            {item}
+          </li>
         ))}
       </ul>
     </nav>

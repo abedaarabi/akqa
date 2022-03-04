@@ -12,19 +12,23 @@
 
   ul {
     display: flex;
+    padding-left: 100px;
     height: 70px;
     align-items: center;
     margin-left: 55px;
     @include mobile {
-      display: none;
+      flex-direction: column;
+      padding: 0;
+      height: auto;
+      margin-left: 0;
     }
     li {
-      padding-left: 50px;
+      padding-left: 30px;
       text-transform: capitalize;
       list-style: none;
       cursor: pointer;
       @include mobile {
-        padding: 20px 0;
+        padding: 5px 0;
       }
     }
     li:hover {

@@ -35,7 +35,7 @@ const navbarTherr = [
 export const NavbarSection = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
-    <section>
+    <section className="navbar-section-container">
       <Navbar
         data={navbarOne}
         menuOpen={menuOpen}

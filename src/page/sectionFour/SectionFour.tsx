@@ -34,6 +34,7 @@ const SectionFour = () => {
       <div className="section-four-item-container">
         {componentsData.map((item) => (
           <Four
+            key={item.id}
             image={item.image}
             h1={item.h1}
             p={item.p}

@@ -3,7 +3,7 @@ export interface PropsType {
   h1: string;
   p: string;
   h2?: string;
-  id: string;
+  id?: string;
 }
 
 export interface NavbarType {

@@ -39,7 +39,7 @@ const SectionTwo = () => {
     <section className="section-two-container">
       {componentsData.map((component) => (
         <Two
-          id={component.id}
+          key={component.id}
           image={component.image}
           h1={component.h1}
           p={component.p}

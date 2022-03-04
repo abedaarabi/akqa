@@ -35,8 +35,8 @@ const componentData = [
 ];
 const SectionFive = () => {
   return (
-    <section className="sectionFive-container">
-      <div className="sectionFive-text">
+    <section className="section-five-container">
+      <div className="section-five-text">
         <h1>KOL Videos - get expert insights here</h1>
         <p>
           See what Key opinion leaders have to say about their experiences with
@@ -44,9 +44,9 @@ const SectionFive = () => {
         </p>
       </div>
 
-      <div className="sectionFive-vedio">
+      <div className="section-five-video">
         {componentData.map((item) => (
-          <Five image={item.image} h1={item.h1} p={item.p} id={item.id} />
+          <Five image={item.image} h1={item.h1} p={item.p} key={item.id} />
         ))}
       </div>
     </section>
