@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faCaretUp, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { NavbarType } from "../../interface/props";
 import "./navbar.scss";
 
@@ -14,7 +14,7 @@ const Navbar = ({
 }: NavbarType) => {
   const [isHide, setIsHide] = React.useState(false);
 
-  const arrow = isHide ? faCaretDown : faCaretUp;
+  const arrow = isHide ? faCaretDown : faCaretRight;
   React.useEffect(() => {}, [isHide]);
   if (menuOpen < 700) {
     return (
@@ -26,7 +26,7 @@ const Navbar = ({
       >
         <li>{data[0]}</li>
 
-        <FontAwesomeIcon icon={arrow} size="2x" color={"#00609c"} />
+        <FontAwesomeIcon icon={arrow} size="1x" color={"#00609c"} />
       </div>
     );
   }
