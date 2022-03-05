@@ -30,29 +30,34 @@ const Navbar = ({
   if (width < 768 && menuOpen) {
     return (
       <div
-        style={{ backgroundColor: color, color: fontColor }}
         className="navbar-hamburger-container"
+        style={{ backgroundColor: color, color: fontColor }}
       >
         <div className="navbar-hamburger">
-          <li>{data[0]}</li>
-
-          <FontAwesomeIcon
-            icon={arrow}
-            size="lg"
-            color={"gray"}
-            onClick={() => {
-              setIsHide(!isHide);
-            }}
-          />
+          <div>
+            <li>
+              <a href="">{data[0]}</a>
+            </li>
+          </div>
+          <div className="navbar-arrow">
+            <FontAwesomeIcon
+              icon={arrow}
+              size="lg"
+              color={isHide ? "#c017a2" : "#2a363b"}
+              onClick={() => {
+                setIsHide(!isHide);
+              }}
+            />
+          </div>
         </div>
-        <div>
+        <div className="ttt">
           {isHide && (
             <ul>
               {data
                 .filter((_, i) => i > 0)
                 .map((item) => (
                   <li onClick={() => setMenuOpen(false)} key={item}>
-                    {item}
+                    <a href=""> {item}</a>
                   </li>
                 ))}
             </ul>

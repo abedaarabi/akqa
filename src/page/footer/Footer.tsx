@@ -19,14 +19,30 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li>Contact</li>
-            <li>Imprint</li>
-            <li>Conditions</li>
-            <li>Conditions</li>
-            <li> Terms of use</li>
-            <li> Privacy</li>
-            <li> Cookie</li>
-            <li> content</li>
+            <li>
+              <a href=""> Contact</a>
+            </li>
+            <li>
+              <a href="">Imprint</a>
+            </li>
+            <li>
+              <a href="">Conditions</a>
+            </li>
+            <li>
+              <a href="">Conditions</a>
+            </li>
+            <li>
+              <a href=""> Terms of use</a>
+            </li>
+            <li>
+              <a href=""> Privacy</a>
+            </li>
+            <li>
+              <a href=""> Cookie</a>
+            </li>
+            <li>
+              <a href=""> content</a>
+            </li>
           </ul>
         </div>
         <div className="footer-text-container">

@@ -65,18 +65,22 @@
       display: flex;
       padding-top: 300px;
       color: #d3d0d0;
+      list-style: none;
       @include mobile {
         padding-top: 30px;
         flex-direction: column;
         text-align: center;
       }
       li {
-        padding-left: 20px;
-        list-style: none;
-        font-weight: 200;
+        a {
+          font-weight: 200;
+          all: unset;
+          padding: 5px;
+        }
       }
-      li:hover {
-        font-weight: 200;
+      a:hover {
+        cursor: pointer;
+        font-weight: 300;
         text-decoration: underline;
         text-underline-offset: 3px;
       }

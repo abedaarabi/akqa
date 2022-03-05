@@ -3,7 +3,7 @@ import "./searchBar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-const Top = () => {
+export const SearchBar = () => {
   return (
     <div className="top-container">
       <div>
@@ -36,4 +36,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+

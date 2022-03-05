@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./app.scss";
-import Top from "./page/searchBar/SearchBar";
+import { SearchBar } from "./page/searchBar/SearchBar";
 import Footer from "./page/footer/Footer";
 import { NavbarSection } from "./page/navbarSection/NavbarSection";
 
@@ -14,7 +14,7 @@ import { TopSection } from "./page/topSection/TopSection";
 function App() {
   return (
     <div className="App">
-      <Top />
+      <SearchBar />
       <NavbarSection />
       <TopSection />
       <SectionTwo />
