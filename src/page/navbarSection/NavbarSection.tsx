@@ -21,7 +21,7 @@ const navbarTwo = [
   "Tralokinumab",
   "Xamiol",
 ] as string[];
-const navbarTherr = [
+const navbarThree = [
   "Overview",
   "Mode of Action",
   "Efficacy",
@@ -36,7 +36,7 @@ export const NavbarSection = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   return (
-    <section className={"navbar-section-container " + (menuOpen && "active")}>
+    <nav className={"navbar-section-container " + (menuOpen && "active")}>
       <div
         className="hamburger"
         onClick={() => {
@@ -63,12 +63,12 @@ export const NavbarSection = () => {
         fontColor="#00609C"
       />
       <Navbar
-        data={navbarTherr}
+        data={navbarThree}
         menuOpen={menuOpen}
         setMenuOpen={setMenuOpen}
         color="#00609C"
         fontColor="#e6e7e8"
       />
-    </section>
+    </nav>
   );
 };

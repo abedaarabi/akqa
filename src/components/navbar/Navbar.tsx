@@ -50,17 +50,19 @@ const Navbar = ({
             />
           </div>
         </div>
-        <div className="ttt">
+        <div>
           {isHide && (
-            <ul>
-              {data
-                .filter((_, i) => i > 0)
-                .map((item) => (
-                  <li onClick={() => setMenuOpen(false)} key={item}>
-                    <a href=""> {item}</a>
-                  </li>
-                ))}
-            </ul>
+            <nav>
+              <ul>
+                {data
+                  .filter((_, i) => i > 0)
+                  .map((item) => (
+                    <li onClick={() => setMenuOpen(false)} key={item}>
+                      <a href=""> {item}</a>
+                    </li>
+                  ))}
+              </ul>
+            </nav>
           )}
         </div>
       </div>
