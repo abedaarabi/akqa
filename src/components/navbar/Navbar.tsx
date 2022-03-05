@@ -28,27 +28,33 @@ const Navbar = ({
   const arrow = isHide ? faCaretDown : faCaretRight;
 
   if (width < 768 && menuOpen) {
-    const [head, ...rest] = data;
     return (
-      <div className="navbar-hamburger-container">
-        <div
-          className="navbar-hamburger"
-          onClick={() => {
-            setIsHide(!isHide);
-          }}
-        >
+      <div
+        style={{ backgroundColor: color, color: fontColor }}
+        className="navbar-hamburger-container"
+      >
+        <div className="navbar-hamburger">
           <li>{data[0]}</li>
 
-          <FontAwesomeIcon icon={arrow} size="1x" color={"#00609c"} />
+          <FontAwesomeIcon
+            icon={arrow}
+            size="lg"
+            color={"gray"}
+            onClick={() => {
+              setIsHide(!isHide);
+            }}
+          />
         </div>
         <div>
           {isHide && (
             <ul>
-              {data.map((item) => (
-                <li onClick={() => setMenuOpen(false)} key={item}>
-                  {item}
-                </li>
-              ))}
+              {data
+                .filter((_, i) => i > 0)
+                .map((item) => (
+                  <li onClick={() => setMenuOpen(false)} key={item}>
+                    {item}
+                  </li>
+                ))}
             </ul>
           )}
         </div>
