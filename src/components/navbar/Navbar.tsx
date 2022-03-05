@@ -1,7 +1,7 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { NavbarType } from "../../interface/props";
 import "./navbar.scss";
 
@@ -23,28 +23,42 @@ const Navbar = ({
     return () => window.removeEventListener("resize", changeWidth);
   }, []);
 
-  // const [isHide, setIsHide] = React.useState(false);
+  const [isHide, setIsHide] = React.useState(false);
 
-  // const arrow = isHide ? faCaretDown : faCaretRight;
+  const arrow = isHide ? faCaretDown : faCaretRight;
 
-  // if (true) {
-  //   return (
-  //     <div
-  //       className="navbar-menu"
-  //       onClick={() => {
-  //         setIsHide(!isHide);
-  //       }}
-  //     >
-  //       <li>{data[0]}</li>
+  if (width < 768 && menuOpen) {
+    const [head, ...rest] = data;
+    return (
+      <div className="navbar-hamburger-container">
+        <div
+          className="navbar-hamburger"
+          onClick={() => {
+            setIsHide(!isHide);
+          }}
+        >
+          <li>{data[0]}</li>
 
-  //       <FontAwesomeIcon icon={arrow} size="1x" color={"#00609c"} />
-  //     </div>
-  //   );
-  // }
+          <FontAwesomeIcon icon={arrow} size="1x" color={"#00609c"} />
+        </div>
+        <div>
+          {isHide && (
+            <ul>
+              {data.map((item) => (
+                <li onClick={() => setMenuOpen(false)} key={item}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <nav
-      className={width < 750 && menuOpen ? "navbar-hamburger" : "navbar"}
+      className={"navbar"}
       style={{ backgroundColor: color, color: fontColor }}
     >
       <ul>

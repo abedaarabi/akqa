@@ -1,8 +1,5 @@
 @import "../../global.scss";
 .navbar-section-container {
-  .hamburger {
-    display: none;
-  }
   @include mobile {
     .hamburger {
       width: 32px;
@@ -13,13 +10,13 @@
       cursor: pointer;
       overflow: hidden;
       position: absolute;
-      top: 22px;
+      top: 20px;
       right: 0;
       padding-right: 20px;
       z-index: 3;
       span {
         width: 100%;
-        height: 4px;
+        height: 3px;
         background-color: $blueColor;
         transform-origin: left;
         transition: all 0.2s ease;

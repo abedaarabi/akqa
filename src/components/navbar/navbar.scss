@@ -30,44 +30,50 @@
   }
 }
 
-.navbar-hamburger {
-  @include mobile {
-    // background-color: rgb(28, 28, 49);
-
+.navbar-hamburger-container {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  .navbar-hamburger {
+    display: flex;
     // position: fixed;
-
+    // background-color: red;
     // padding: 0;
     // margin: 0;
     // top: 0;
     // left: 0;
+    align-items: center;
+
+    list-style: none;
+    margin-top: 10px;
     width: 100%;
-    height: auto;
+    height: 100%;
 
-    ul {
-      // margin-top: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
-      // padding: 0;
-      // margin: 0;
-      // top: 0;
-      // left: 0;
+  ul {
+    display: flex;
+    padding-left: 80px;
+    flex-direction: column;
+
+    li {
+      width: auto;
+      justify-content: start;
+      list-style: none;
+
+      margin-top: 5px;
       display: flex;
-
-      align-items: center;
-
-      flex-direction: column;
-      li {
-        margin-top: 10px;
-        display: flex;
-        padding-left: 30px;
-        text-transform: capitalize;
-        list-style: none;
-        cursor: pointer;
-      }
-      li:hover {
-        font-weight: 500;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-      }
+      padding-left: 30px;
+      text-transform: capitalize;
+      list-style: none;
+      cursor: pointer;
+    }
+    li:hover {
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 }
