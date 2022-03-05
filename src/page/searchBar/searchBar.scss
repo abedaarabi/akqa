@@ -10,7 +10,8 @@
   font-family: "Roboto";
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 190px;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -61,5 +62,6 @@
     align-items: flex-start;
     margin-left: 10%;
     margin-top: 10px;
+    padding: 0;
   }
 }
