@@ -1,7 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+// import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { NavbarType } from "../../interface/props";
 import "./navbar.scss";
 
@@ -12,9 +12,20 @@ const Navbar = ({
   color,
   fontColor,
 }: NavbarType) => {
-  const [isHide, setIsHide] = React.useState(false);
+  const [width, setWidth] = React.useState(window.innerWidth);
 
-  const arrow = isHide ? faCaretDown : faCaretRight;
+  React.useEffect(() => {
+    const changeWidth = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+    return () => window.removeEventListener("resize", changeWidth);
+  }, []);
+
+  // const [isHide, setIsHide] = React.useState(false);
+
+  // const arrow = isHide ? faCaretDown : faCaretRight;
 
   // if (true) {
   //   return (
@@ -33,7 +44,7 @@ const Navbar = ({
 
   return (
     <nav
-      className={"navbar " + (menuOpen && "menu-navbar")}
+      className={width < 750 && menuOpen ? "navbar-hamburger" : "navbar"}
       style={{ backgroundColor: color, color: fontColor }}
     >
       <ul>
