@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./app.scss";
-import Top from "./page/tob/Top";
+import Top from "./page/searchBar/SearchBar";
 import Footer from "./page/footer/Footer";
 import { NavbarSection } from "./page/navbarSection/NavbarSection";
 

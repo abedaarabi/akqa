@@ -1,8 +1,8 @@
 import React from "react";
+import "./searchBar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import "./top.scss";
 const Top = () => {
   return (
     <div className="top-container">
@@ -27,8 +27,8 @@ const Top = () => {
           <input
             id="search"
             type="text"
-            name="sarch input"
-            placeholder="SARCH"
+            name="search input"
+            placeholder="SEARCH"
           />
         </div>
       </div>

@@ -10,6 +10,6 @@ export interface NavbarType {
   data: string[];
   color: string;
   fontColor: string;
-  menuOpen: number;
-  setMenuOpen: React.Dispatch<React.SetStateAction<number>>;
+  menuOpen: boolean;
+  setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
