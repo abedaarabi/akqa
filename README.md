@@ -1,3 +1,7 @@
+## Responsiveness
+
+Width: `768px`.
+
 ## component descriptions
 
 ### `</NavbarSection>`
