@@ -22,7 +22,7 @@ export const TopSection = () => {
       </div>
       <div className="bottom">
         <div className="img-container">
-          <img width="800" src={adtralza} alt="brand logo" />
+          <img width="800" src={adtralza} alt="Adtralza injection 150 mg" />
         </div>
         <div className="text-container">
           <h1>

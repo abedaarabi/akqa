@@ -40,6 +40,7 @@ const SectionTwo = () => {
       {componentsData.map((component) => (
         <Two
           key={component.id}
+          altDescription={component.h1}
           image={component.image}
           h1={component.h1}
           p={component.p}

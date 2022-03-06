@@ -27,7 +27,10 @@ const SectionThree = () => {
         <p>Duration: 2:43</p>
       </div>
       <div className="section-three-right">
-        <img src={image} alt="" />
+        <img
+          src={image}
+          alt="a key driver of Atopic Dermatitis signs and symptoms"
+        />
       </div>
     </section>
   );

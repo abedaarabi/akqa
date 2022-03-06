@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faAngleRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { NavbarMobileType } from "../../interface/props";
-import "./navbar.scss";
+import "./navbarItemMobile.scss";
 
 const NavbarItemMobile = ({
   data,
@@ -37,7 +37,7 @@ const NavbarItemMobile = ({
         {isHide && (
           <ul>
             {data
-              .filter((_, i) => i > 0)
+              .filter((_, idx) => idx > 0)
               .map((item, i) => (
                 <li tabIndex={i} onClick={() => setMenuOpen(false)} key={item}>
                   <span> {item}</span>

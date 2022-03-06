@@ -4,6 +4,7 @@ export interface PropsType {
   p: string;
   h2?: string;
   id?: string;
+  altDescription?: string;
 }
 
 export interface NavbarMobileType {

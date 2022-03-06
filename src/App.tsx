@@ -13,7 +13,7 @@ import { TopSection } from "./page/topSection/TopSection";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <SearchBar />
       <NavbarSection />
       <TopSection />
@@ -22,7 +22,7 @@ function App() {
       <SectionFour />
       <SectionFive />
       <Footer />
-    </div>
+    </>
   );
 }
 
