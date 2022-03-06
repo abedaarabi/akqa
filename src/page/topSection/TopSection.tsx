@@ -3,7 +3,7 @@ import "./topSection.scss";
 //@ts-ignore
 import logo from "./img/logo.png";
 //@ts-ignore
-import adtralza from "../../img/adtralza.png";
+import adtralza from "./img/adtralza.png";
 
 export const TopSection = () => {
   return (

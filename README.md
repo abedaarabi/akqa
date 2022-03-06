@@ -1,3 +1,12 @@
+## component descriptions
+
+### `</NavbarSection>`
+
+Framework: `React Typescript`
+Source file: `./page/navbarSection/NavbarSection`.
+Props: `data: string[], color: string, fontColor: string, menuOpen: boolean`.
+Styling component: `scss`
+
 ## Available Scripts
 
 In the project directory, you can run:
