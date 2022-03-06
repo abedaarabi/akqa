@@ -15,7 +15,6 @@ export const SearchBar = () => {
         </p>
       </div>
       <div className="input-container">
-        {/* TODO: check the accessibility */}
         <div className="search-icon">
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
@@ -23,17 +22,16 @@ export const SearchBar = () => {
             fixedWidth={true}
           />
         </div>
-        <div>
+        <form onSubmit={alert}>
           <input
             id="search"
             type="text"
+            tabIndex={0}
             name="search input"
             placeholder="SEARCH"
           />
-        </div>
+        </form>
       </div>
     </div>
   );
 };
-
-

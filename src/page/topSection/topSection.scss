@@ -21,12 +21,11 @@
     }
     @include mobile {
       width: auto;
-      // background: linear-gradient(to right, #010c18, #05293f, #005b87);
-      background: url("./img/IVACover.png");
-      background-size: cover;
-      background-position: center left;
+      background-size: contain;
+      background-position: bottom left;
       flex-direction: column;
-      height: 250px;
+      height: 400px;
+      background-repeat: no-repeat;
     }
 
     .top-Section-text {
@@ -39,6 +38,12 @@
         font-weight: 400;
       }
       @include mobile {
+        padding-top: 0;
+        min-width: 60%;
+        margin: 50px auto;
+        margin-left: 40px;
+        flex: 1;
+        margin-top: 30px;
         h1 {
           font-size: 15px;
         }

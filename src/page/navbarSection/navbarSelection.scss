@@ -1,6 +1,16 @@
 @import "../../global.scss";
 .navbar-section-container {
   @include mobile {
+    .navbar-item-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: aliceblue;
+      padding: 70px 10px 10px;
+      overflow-y: auto;
+    }
     .hamburger {
       width: 32px;
       height: 25px;

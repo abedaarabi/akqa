@@ -6,10 +6,16 @@ export interface PropsType {
   id?: string;
 }
 
-export interface NavbarType {
+export interface NavbarMobileType {
   data: string[];
   color: string;
   fontColor: string;
   menuOpen: boolean;
   setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface NavbarType {
+  data: string[];
+  color: string;
+  fontColor: string;
 }

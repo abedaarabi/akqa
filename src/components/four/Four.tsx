@@ -6,7 +6,7 @@ const Four = ({ image, h1, p, h2 }: PropsType) => {
   return (
     <div className="four-container">
       <div className="item">
-        <img src={image} alt="" />
+        <img src={image} alt={h1} />
         <div className="four-text">
           <h1>{h1}</h1>
           <p>{p}</p>
