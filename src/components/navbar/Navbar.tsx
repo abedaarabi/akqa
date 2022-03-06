@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { NavbarType } from "../../interface/props";
 import "./navbar.scss";
 
@@ -25,11 +25,11 @@ const Navbar = ({
 
   const [isHide, setIsHide] = React.useState(false);
 
-  const arrow = isHide ? faCaretDown : faCaretRight;
+  const arrow = isHide ? faAngleDown : faAngleRight;
 
   if (width < 768 && menuOpen) {
     return (
-      <div
+      <nav
         className="navbar-hamburger-container"
         style={{ backgroundColor: color, color: fontColor }}
       >
@@ -52,20 +52,18 @@ const Navbar = ({
         </div>
         <div>
           {isHide && (
-            <nav>
-              <ul>
-                {data
-                  .filter((_, i) => i > 0)
-                  .map((item) => (
-                    <li onClick={() => setMenuOpen(false)} key={item}>
-                      <a href=""> {item}</a>
-                    </li>
-                  ))}
-              </ul>
-            </nav>
+            <ul>
+              {data
+                .filter((_, i) => i > 0)
+                .map((item) => (
+                  <li onClick={() => setMenuOpen(false)} key={item}>
+                    <a href=""> {item}</a>
+                  </li>
+                ))}
+            </ul>
           )}
         </div>
-      </div>
+      </nav>
     );
   }
 

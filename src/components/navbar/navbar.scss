@@ -49,11 +49,12 @@
     height: 100%;
     .navbar-arrow {
       padding: 5px;
+      cursor: pointer;
     }
     li a {
       all: unset;
     }
-    &:hover {
+    a:hover {
       cursor: pointer;
       font-weight: 500;
       text-decoration: underline;
