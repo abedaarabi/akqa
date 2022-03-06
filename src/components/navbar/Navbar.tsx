@@ -43,7 +43,7 @@ const Navbar = ({
             <FontAwesomeIcon
               icon={arrow}
               size="lg"
-              color={isHide ? "#c017a2" : "#2a363b"}
+              color={fontColor}
               onClick={() => {
                 setIsHide(!isHide);
               }}
