@@ -2,10 +2,13 @@
 
 ### `</NavbarSection>`
 
-Framework: `React Typescript`
+Framework: `React Typescript`.
+
 Source file: `./page/navbarSection/NavbarSection`.
+
 Props: `data: string[], color: string, fontColor: string, menuOpen: boolean`.
-Styling component: `scss`
+
+Styling component: `scss`.
 
 ## Available Scripts
 
