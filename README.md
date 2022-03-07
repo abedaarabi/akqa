@@ -1,6 +1,6 @@
 ## Responsiveness
 
-Width: `768px`.
+max-width: `768px`.
 
 ## component descriptions
 
